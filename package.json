@@ -1,0 +1,50 @@
+{
+  "name": "jsonschematojsonform",
+  "widgetName": "JSONSchemaToJSONForm",
+  "version": "1.0.0",
+  "description": "This widget takes a structured data model defined using JSON Schema as input and returns a HTML form that matches the schema. Upon Submit JSON object will be retured back.",
+  "copyright": "Mendix 2022",
+  "author": "Gorakshanath Jaykar",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache 2.0",
+  "config": {
+    "projectPath": "../../",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.20.0",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-json": "^5.0.1",
+    "@types/big.js": "^6.0.2",
+    "@types/jsonpath": "^0.2.0",
+    "@types/react": "~17.0.1",
+    "@types/react-dom": "~17.0.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-json": "^4.0.0",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "audit": "^0.0.6",
+    "fix": "^0.0.6",
+    "flatted": "^3.2.7",
+    "jsonpath": "^1.1.1",
+    "npm": "^9.1.2"
+  },
+  "dependencies": {
+    "@rjsf/core": "^5.0.0-beta.13",
+    "@rjsf/material-ui": "^5.0.0-beta.13",
+    "@rjsf/utils": "^5.0.0-beta.13",
+    "@rjsf/validator-ajv8": "^5.0.0-beta.13"
+  }
+}

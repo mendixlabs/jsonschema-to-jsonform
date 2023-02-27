@@ -1,0 +1,40 @@
+/*
+Place your custom CSS here
+*/
+
+.form-horizontal .form-group {
+    margin-left: 0px !important;
+  }
+  
+.form-control {
+    display: block !important;
+    width: 100% !important;
+  }
+  
+.form-group {
+    display: block !important;
+  }
+
+.my-form .row {
+    display: block !important;
+  }
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  float: left;
+ }
+
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.JSONViewer .alert {
+  margin-top: 5px;
+}

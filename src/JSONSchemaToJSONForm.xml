@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.jsonschematojsonform.JSONSchemaToJSONForm" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>JSONSchema to JSONForm</name>
+    <description>This widget takes a structured data model defined using JSON Schema as input and returns a HTML form that matches the schema. Upon Submit JSON object will be retured back.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <propertyGroup caption="Data source">
+                <property key="mxJsonSchema" type="attribute" required="true">
+                    <caption>JSON Schema</caption>
+                    <description>An attribute to fetch JSON Schema at the runtime</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+                <property key="mxUiSchema" type="attribute" required="true">
+                    <caption>UI Schema</caption>
+                    <description>An attribute that provided information on how the form should be rendered</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+                <property key="mxPlaceholderData" type="attribute" required="true">
+                    <caption>Placeholder Data</caption>
+                    <description>An attribute using which initial form would be rendered</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+                <property key="mxJsonFormResponse" type="attribute" required="true" onChange="onStatusChange">
+                    <caption>Form output</caption>
+                    <description>An attribute to store the output of user filled form(JSON string)</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>
+
+            <propertyGroup caption="Action">
+                <property key="onStatusChange" type="action" required="true">
+                    <caption>On change</caption>
+                    <description>Handle the JSON form output response</description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Label">
+                <systemProperty key="Label" />
+            </propertyGroup>
+            <propertyGroup caption="Editability">
+                <systemProperty key="Editability"/>
+            </propertyGroup>
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility"/>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
