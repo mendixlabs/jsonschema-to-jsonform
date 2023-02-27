@@ -3,6 +3,7 @@
 .idea
 .vscode
 dist
+output
 node_modules
 .env
 *.log
