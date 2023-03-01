@@ -1,7 +1,7 @@
 ## JSON Schema To JSON Form
 
-The goal of JSONSchemaToJSONForm is to automatically create a HTML form using a JSON Schema. Simply create a JSON schema
-using the guidelines provided at https://json-schema.org/ and send it as the JSON schema to this widget if you want to
+The goal of JSONSchemaToJSONForm is to automatically create a form using a JSON Schema. 
+Simply create a JSON schema using the guidelines provided at https://json-schema.org/ and send it as the JSON schema to this widget. 
 create a form for any type of data. In brief, you can use the JSON structure to construct the forms dynamically.
 
 Moreover, JSONSchemaToJSONForm includes UI Schema and Placeholder data for the form, enabling more personalised forms.
@@ -9,8 +9,9 @@ Moreover, JSONSchemaToJSONForm includes UI Schema and Placeholder data for the f
 ## Features
 
 -   Generate JSON forms using the provided JSON schema, users can fill in the form data and submit the form and the output will be stored in configured attribute in JSON string format.
--   Supports UI schema to generate more personalized forms
+-   Supports UI schema to generate more personalized forms.
 -   Supports Placeholder data that can be used to pre-fill the generated form.
+-   Forms can be created at runtime by providing the JSON schema.
 
 ## Usage
 
@@ -38,8 +39,9 @@ Please file an issue <a href="https://github.com/mendixlabs/jsonschema-to-jsonfo
 
 ## Development and contribution
 
-This widget is based upon the <a href="https://github.com/rjsf-team">react-jsonschema-form</a> by rjsf-team
+This widget is based upon the <a href="https://github.com/rjsf-team">react-jsonschema-form</a> by rjsf-team and uses <a href="https://www.npmjs.com/package/@rjsf/core">rjsf-core</a>
 
 ## License
+ Apache v2
 
-Apache v2
+## This component is not officially supported by Mendix. 
